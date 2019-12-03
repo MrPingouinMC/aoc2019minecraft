@@ -1,0 +1,1 @@
+data remove storage minecraft:io lines[0]

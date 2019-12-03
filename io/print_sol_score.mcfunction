@@ -1,0 +1,1 @@
+tellraw @a ["Solution : ", {"score":{"objective":"REG","name":"SOL"}}]

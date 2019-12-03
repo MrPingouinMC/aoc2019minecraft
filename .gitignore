@@ -1,0 +1,9 @@
+#To not share inputs : 
+init_inputs.mcfunction
+input/*
+downloaded.json
+
+#Misc test that don't deserver to be in the repository
+*.txt
+sol_2018/*
+treeset
