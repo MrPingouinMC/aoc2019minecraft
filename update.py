@@ -80,6 +80,16 @@ def main():
 	
 	downloaded = load_downloaded()
 	
+	if sys.argv[1] == "test":
+		with open("test.txt", "r") as t:
+			data = t.read()
+		with open("input/test.mcfunction", "w") as f:
+			f.write(data_to_command(data, "test"))
+			downloaded.append("input/test")
+		save_downloaded(downloaded)
+		exit(0)
+
+
 	selected_years = parse_num_argument(sys.argv, 1, 2015, get_lastest_year(), default=None, name="year")
 	selected_days = parse_num_argument(sys.argv, 2, 1, 25, default="*", name="day")
 	
@@ -94,6 +104,7 @@ def main():
 	for year in selected_years:
 		for day in selected_days:
 			data = get_input_data(year, day)
+			
 			with open(INPUT_TEMPLATE % (year, day), "w") as f:
 				sname = input_name(year, day)
 				f.write(data_to_command(data, sname))

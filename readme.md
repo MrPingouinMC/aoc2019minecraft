@@ -21,8 +21,10 @@ Then, in game, you can run a solution with :
 
 
 ### How to use
-The repository must be placed at the base of the `functions` folder, in an `aoc` namespace of the datapack
-On reload, inputs are loaded into a `aoc_<year>_day<day>` storage
+The repository must be placed at the base of the `functions` folder, in an `aoc` namespace of the datapack.
+
+On reload, inputs are loaded into a `aoc_<year>_day<day>` storage.
+
 Since minecraft don't have convenient string manipulation, the input is transformed in the following way : 
 ```
 1,2,3

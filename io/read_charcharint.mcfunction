@@ -1,0 +1,67 @@
+scoreboard players set RCHAR REG -1
+
+data modify storage minecraft:proc char set from storage minecraft:io line[0]
+execute if data storage minecraft:proc {"char":"0"} run scoreboard players set RCHAR REG 0 
+execute if data storage minecraft:proc {"char":"1"} run scoreboard players set RCHAR REG 1 
+execute if data storage minecraft:proc {"char":"2"} run scoreboard players set RCHAR REG 2 
+execute if data storage minecraft:proc {"char":"3"} run scoreboard players set RCHAR REG 3
+execute if data storage minecraft:proc {"char":"4"} run scoreboard players set RCHAR REG 4
+execute if data storage minecraft:proc {"char":"5"} run scoreboard players set RCHAR REG 5
+execute if data storage minecraft:proc {"char":"6"} run scoreboard players set RCHAR REG 6
+execute if data storage minecraft:proc {"char":"7"} run scoreboard players set RCHAR REG 7
+execute if data storage minecraft:proc {"char":"8"} run scoreboard players set RCHAR REG 8
+execute if data storage minecraft:proc {"char":"9"} run scoreboard players set RCHAR REG 9
+
+execute if data storage minecraft:proc {"char":"A"} run scoreboard players set RCHAR REG 10
+execute if data storage minecraft:proc {"char":"B"} run scoreboard players set RCHAR REG 11
+execute if data storage minecraft:proc {"char":"C"} run scoreboard players set RCHAR REG 12
+execute if data storage minecraft:proc {"char":"D"} run scoreboard players set RCHAR REG 13
+execute if data storage minecraft:proc {"char":"E"} run scoreboard players set RCHAR REG 14
+execute if data storage minecraft:proc {"char":"F"} run scoreboard players set RCHAR REG 15
+execute if data storage minecraft:proc {"char":"G"} run scoreboard players set RCHAR REG 16
+execute if data storage minecraft:proc {"char":"H"} run scoreboard players set RCHAR REG 17
+execute if data storage minecraft:proc {"char":"I"} run scoreboard players set RCHAR REG 18
+execute if data storage minecraft:proc {"char":"J"} run scoreboard players set RCHAR REG 19
+execute if data storage minecraft:proc {"char":"K"} run scoreboard players set RCHAR REG 20
+execute if data storage minecraft:proc {"char":"L"} run scoreboard players set RCHAR REG 21
+execute if data storage minecraft:proc {"char":"M"} run scoreboard players set RCHAR REG 22
+execute if data storage minecraft:proc {"char":"N"} run scoreboard players set RCHAR REG 23
+execute if data storage minecraft:proc {"char":"O"} run scoreboard players set RCHAR REG 24
+execute if data storage minecraft:proc {"char":"P"} run scoreboard players set RCHAR REG 25
+execute if data storage minecraft:proc {"char":"Q"} run scoreboard players set RCHAR REG 26
+execute if data storage minecraft:proc {"char":"R"} run scoreboard players set RCHAR REG 27
+execute if data storage minecraft:proc {"char":"S"} run scoreboard players set RCHAR REG 28
+execute if data storage minecraft:proc {"char":"T"} run scoreboard players set RCHAR REG 29
+execute if data storage minecraft:proc {"char":"U"} run scoreboard players set RCHAR REG 30
+execute if data storage minecraft:proc {"char":"V"} run scoreboard players set RCHAR REG 31
+execute if data storage minecraft:proc {"char":"W"} run scoreboard players set RCHAR REG 32
+execute if data storage minecraft:proc {"char":"X"} run scoreboard players set RCHAR REG 33
+execute if data storage minecraft:proc {"char":"Y"} run scoreboard players set RCHAR REG 34
+execute if data storage minecraft:proc {"char":"Z"} run scoreboard players set RCHAR REG 35
+
+execute if data storage minecraft:proc {"char":"a"} run scoreboard players set RCHAR REG 36
+execute if data storage minecraft:proc {"char":"b"} run scoreboard players set RCHAR REG 37
+execute if data storage minecraft:proc {"char":"c"} run scoreboard players set RCHAR REG 38
+execute if data storage minecraft:proc {"char":"d"} run scoreboard players set RCHAR REG 39
+execute if data storage minecraft:proc {"char":"e"} run scoreboard players set RCHAR REG 40
+execute if data storage minecraft:proc {"char":"f"} run scoreboard players set RCHAR REG 41
+execute if data storage minecraft:proc {"char":"g"} run scoreboard players set RCHAR REG 42
+execute if data storage minecraft:proc {"char":"h"} run scoreboard players set RCHAR REG 43
+execute if data storage minecraft:proc {"char":"i"} run scoreboard players set RCHAR REG 44
+execute if data storage minecraft:proc {"char":"j"} run scoreboard players set RCHAR REG 45
+execute if data storage minecraft:proc {"char":"k"} run scoreboard players set RCHAR REG 46
+execute if data storage minecraft:proc {"char":"l"} run scoreboard players set RCHAR REG 47
+execute if data storage minecraft:proc {"char":"m"} run scoreboard players set RCHAR REG 48
+execute if data storage minecraft:proc {"char":"n"} run scoreboard players set RCHAR REG 49
+execute if data storage minecraft:proc {"char":"o"} run scoreboard players set RCHAR REG 50
+execute if data storage minecraft:proc {"char":"p"} run scoreboard players set RCHAR REG 51
+execute if data storage minecraft:proc {"char":"q"} run scoreboard players set RCHAR REG 52
+execute if data storage minecraft:proc {"char":"r"} run scoreboard players set RCHAR REG 53
+execute if data storage minecraft:proc {"char":"s"} run scoreboard players set RCHAR REG 54
+execute if data storage minecraft:proc {"char":"t"} run scoreboard players set RCHAR REG 55
+execute if data storage minecraft:proc {"char":"u"} run scoreboard players set RCHAR REG 56
+execute if data storage minecraft:proc {"char":"v"} run scoreboard players set RCHAR REG 57
+execute if data storage minecraft:proc {"char":"w"} run scoreboard players set RCHAR REG 58
+execute if data storage minecraft:proc {"char":"x"} run scoreboard players set RCHAR REG 59
+execute if data storage minecraft:proc {"char":"y"} run scoreboard players set RCHAR REG 60
+execute if data storage minecraft:proc {"char":"z"} run scoreboard players set RCHAR REG 61

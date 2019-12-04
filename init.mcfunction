@@ -9,6 +9,7 @@ scoreboard objectives add REG dummy
 scoreboard objectives add CONST dummy
 
 
+scoreboard players set -1 CONST -1
 scoreboard players set 2 CONST 2
 scoreboard players set 3 CONST 3
 scoreboard players set 4 CONST 4
