@@ -11,3 +11,4 @@ execute if data storage minecraft:proc {"char":"6"} run scoreboard players set R
 execute if data storage minecraft:proc {"char":"7"} run scoreboard players set RCHAR REG 7
 execute if data storage minecraft:proc {"char":"8"} run scoreboard players set RCHAR REG 8
 execute if data storage minecraft:proc {"char":"9"} run scoreboard players set RCHAR REG 9
+execute if data storage minecraft:proc {"char":"-"} run scoreboard players set RCHAR REG -2
