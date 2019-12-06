@@ -31,3 +31,5 @@ execute as @e[tag=pointer] run function aoc:sol_2019/day5/loop
 scoreboard players operation SOL REG = OUT REG
 function aoc:io/print_sol_score
 function aoc:util/timer_end
+
+kill @e[tag=pointer]
