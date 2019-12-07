@@ -4,7 +4,7 @@ gamerule doMobSpawning false
 #gamerule logAdminCommands false
 
 gamerule maxCommandChainLength 2147483647
-#gamerule maxCommandChainLength 2147483
+#gamerule maxCommandChainLength 214748
 forceload add 0 0
 
 scoreboard objectives add REG dummy
