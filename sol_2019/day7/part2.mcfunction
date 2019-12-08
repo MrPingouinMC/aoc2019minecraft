@@ -34,3 +34,7 @@ function aoc:io/print_sol_score
 function aoc:util/timer_end
 
 function aoc:j10y/destroy
+
+
+
+# The case where is program chainning programs have multiples outputs may not work, but that's not the cas for the puzzle input.
