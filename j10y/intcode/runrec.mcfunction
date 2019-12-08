@@ -26,7 +26,9 @@ execute if score OP REG matches 1..8 if score MOVE_POINTER REG matches 1 run sco
 
 
 execute unless score OP REG matches 1..8 unless score OP REG matches 99 run tellraw @a ["Invalid state", {"score":{"objective":"REG","name":"OP"}}]
+#execute if score OP REG matches 99 run tellraw @a ["Program ended with exit code 0"]
 
 
-execute if score OP REG matches 1..8 run function aoc:j10y/intcode/runrec
+
+execute if score OP REG matches 1..8 if score HALT REG matches 0 run function aoc:j10y/intcode/runrec
 

@@ -1,8 +1,11 @@
 #Put your inputs in storage intcode.input
 
+
+scoreboard players set COPY REG -1
 scoreboard players set POINTER REG 0
 scoreboard players set LEN REG 2550
 data modify storage intcode out set value []
+data modify storage intcode in set value []
 
 
 kill @e[tag=pointer]

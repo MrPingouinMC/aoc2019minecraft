@@ -19,6 +19,7 @@ scoreboard players operation V REG = RINT REG
 execute at @s run function aoc:j10y/set_value
 
 
+scoreboard players operation LEN REG = POINTER REG
 scoreboard players add POINTER REG 1
 execute store result score SIZE REG run data get storage io line
 execute if score SIZE REG matches 1.. run function aoc:j10y/intcode/loadrec
