@@ -2,8 +2,8 @@
 #function aoc:io/readpopline
 
 function aoc:io/read_charspecial
-execute if score RINT REG matches 1 run setblock ~ ~ ~ granite 
-execute if score RINT REG matches 0 run setblock ~ ~ ~ glass 
+execute if score RINT REG matches 1 run setblock ~ ~ ~ pink_terracotta 
+execute if score RINT REG matches 0 run setblock ~ ~ ~ gray_stained_glass
 
 tp ~1 ~ ~
 scoreboard players remove ROW REG 1
