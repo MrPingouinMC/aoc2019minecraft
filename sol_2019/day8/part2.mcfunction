@@ -20,12 +20,11 @@ scoreboard players set LAYER REG 0
 
 #The input only has one line
 function aoc:io/readpopline
-#The input only has one line
 
 
 kill @e[tag=draw]
 summon minecraft:armor_stand 30 1 30 {NoGravity:1b,Tags:[draw]}
-fill 30 0 30 54 100 35 stone
+fill 29 0 29 55 100 36 stone
 execute store result score SIZE REG run data get storage io line
 execute as @e[tag=draw] at @s run function aoc:sol_2019/day8/draw
 

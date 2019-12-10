@@ -32,6 +32,6 @@ execute store result storage minecraft:proc arr[-1].p int 1 run scoreboard playe
 
 #execute store storage 
 scoreboard players add INDEX REG 1
-execute store result score SIZE REG run data get storage io line
+scoreboard players remove SIZE REG 1
 execute if score SIZE REG matches 1.. run function aoc:io/pop_char
 execute if score SIZE REG matches 1.. run function aoc:sol_2019/day3/convertpart2

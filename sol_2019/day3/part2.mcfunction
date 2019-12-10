@@ -24,6 +24,7 @@ function aoc:io/readpopline
 
 
 say Register wire 1
+execute store result score SIZE REG run data get storage io line
 function aoc:sol_2019/day3/convertpart2
 
 scoreboard players set POSX REG 0

@@ -18,4 +18,5 @@ execute if score Y REG >= H REG run scoreboard players set Y REG 0
 
 #This speed up things by a lot. Storage to get the size is slow.
 scoreboard players remove SIZE REG 1
+#execute store result score SIZE REG run data get storage io line
 execute if score SIZE REG matches 1.. run function aoc:sol_2019/day8/read_layers

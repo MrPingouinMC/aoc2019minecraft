@@ -20,7 +20,6 @@ scoreboard players set LAYER REG 0
 
 #The input only has one line
 function aoc:io/readpopline
-#The input only has one line
 
 execute store result score SIZE REG run data get storage io line
 function aoc:sol_2019/day8/read_layers
