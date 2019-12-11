@@ -1,5 +1,5 @@
 #Load input in io storage
-say Advent of code 2019 day 10 part 1 : 
+say Advent of code 2019 day 10 part 2 : 
 function aoc:util/timer_start
 data modify storage minecraft:io lines set from storage minecraft:aoc_2019_day10 data
 #data modify storage minecraft:io lines set from storage test data
@@ -26,7 +26,6 @@ data modify storage mem coprimes set value []
 data modify storage mem modif set value [[1,1],[1,-1],[-1,1],[-1,-1]]
 function aoc:sol_2019/day10/coprimes_pairs
 
-
 kill @e[tag=count]
 summon armor_stand -30 10 -30 {NoGravity:1b,Marker:1b,Tags:["count"]}
 scoreboard players set X REG 0
@@ -34,11 +33,22 @@ scoreboard players set Z REG 0
 execute as @e[tag=draw] at @s run tp -30 10 -30
 execute as @e[tag=draw] at @s run function aoc:sol_2019/day10/solve
 
-scoreboard players operation SOL REG = MAX REG
+#scoreboard players set MAXX REG -19
+#scoreboard players set MAXZ REG -17
+
+tellraw @a ["max ", {"score":{"objective":"REG","name":"MAXX"}}]
+tellraw @a ["max ", {"score":{"objective":"REG","name":"MAXZ"}}]
+
+execute as @e[tag=draw] at @s run function aoc:sol_2019/day10/solve2
+
+
+scoreboard players operation SOL REG = SOLX REG
+scoreboard players operation SOL REG *= 100 CONST
+scoreboard players operation SOL REG += SOLZ REG
+
 function aoc:io/print_sol_score
 function aoc:util/timer_end
-
-fill -10 10 -10 -30 10 -30 pink_terracotta replace granite
-fill -10 10 -10 -30 10 -30 white_stained_glass replace glass
 kill @e[tag=draw]
 kill @e[tag=count]
+fill -10 10 -10 -30 10 -30 pink_terracotta replace granite
+fill -10 10 -10 -30 10 -30 white_stained_glass replace glass

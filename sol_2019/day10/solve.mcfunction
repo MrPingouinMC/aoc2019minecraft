@@ -38,14 +38,14 @@ scoreboard players set P1 REG -1
 scoreboard players set P2 REG 0
 function aoc:sol_2019/day10/ray_count
 
+execute if score COUNT REG > MAX REG run scoreboard players operation MAXX REG = BASEX REG
+execute if score COUNT REG > MAX REG run scoreboard players operation MAXZ REG = BASEZ REG
+#execute if score COUNT REG >= MAX REG run tellraw @a ["current max", {"score":{"objective":"REG","name":"COUNT"}}]
 execute if score COUNT REG > MAX REG run scoreboard players operation MAX REG = COUNT REG
 
 tp ~1 ~ ~
 scoreboard players add X REG 1
 execute if score X REG >= PSIZE1 REG run scoreboard players add Z REG 1
-
-execute at @s if score Z REG >= PSIZE2 REG run fill ~ ~ ~ -30 10 -30 pink_terracotta replace granite
-execute at @s if score Z REG >= PSIZE2 REG run fill ~ ~ ~ -30 10 -30 white_stained_glass replace glass
 
 execute if score X REG >= PSIZE1 REG run tp -30 ~ ~1
 execute if score X REG >= PSIZE1 REG run scoreboard players set X REG 0
