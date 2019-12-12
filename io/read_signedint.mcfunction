@@ -1,8 +1,9 @@
 #Since this function is reccusive, RINT REG need to ne initialized to 0 (TODO might need to change that)
 
+scoreboard players set RINT REG 0
 function aoc:io/read_charint
 
-scoreboard players operation SIGN REG = 1 CONST
+scoreboard players set SIGN REG 1
 
 execute if score RCHAR REG matches 0.. run scoreboard players operation RINT REG *= 10 CONST
 execute if score RCHAR REG matches 0.. run function aoc:io/pop_char
